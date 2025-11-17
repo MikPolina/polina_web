@@ -1,0 +1,19 @@
+footer{
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 1180px;
+    height: 350px;
+    background-color: #858585;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__logo__icons{
+    display: flex;
+    gap: 20px;
+}
+.footer__menu__a{
+    color: #ffffff;
+}

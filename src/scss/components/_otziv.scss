@@ -1,0 +1,31 @@
+.otziv{
+    width: 318px;
+    height: 208px;
+    background-color: #FFFF;
+    border: solid 4px #B78AAE;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__img{
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding-bottom: 30px;
+    }
+    &__text{
+        width: 258px;
+        padding-left: 30px;
+    }
+    &__name{
+        padding-left: 30px;
+    }
+    &__span{
+        color: #B78AAE;
+        font-size: 24px;
+    }
+    &__p{
+        color: #B78AAE;
+    }
+}

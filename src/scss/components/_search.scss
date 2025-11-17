@@ -1,0 +1,36 @@
+form{
+margin-left: 100px;
+}
+.search{
+    width: 684px;
+    height: 60px;
+    border: 5px solid #858585;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+
+    &__input {
+    width: 640px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    font-size: 32px;
+    color: #858585;
+    }
+
+    &__button {
+    width: 40px;
+    margin-right: 30px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    }
+
+    .search-button:hover {
+        background-color: #FFF4EA; /* Цвет кнопки при наведении */
+    }
+}

@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>Document</title>
+</head>
+<body>
+
+@@include('../components/_header.html')
+
+<div class="glav">
+        <div class="glav__text">
+            <h1>Мебель для питомцев</h1>
+            <h1 class="h1__2">Комфорт и стиль для кажого хвоста</h1>
+        </div>
+        <div class="glav__img">
+            <div class="glav__img__1"><img src="./assets/images/глав1.webp"></div>
+            <div class="glav__img__2"><img src="./assets/images/глав2.webp"></div>
+            <div class="glav__img__3"><img src="./assets/images/глав3.webp"></div>
+        </div>
+    </div>
+
+
+<h>О НАС</h>
+<p class="glav__onas">Лапкин — создаем эргономичную мебель для домашних питомцев, 
+    которая сочетает современный дизайн, качественные материалы и продуманный комфорт.</p>
+
+<div class="plusi">
+<div>
+@@include('../components/_plus.html', {
+    "img": "./assets/images/качество",
+    "alt": "icon",
+    "text": "Используем только безопасные, прочные материалы, чтобы мебель выдерживала активные игры и радовала вас долгие годы."
+})
+</div>
+
+<div>
+@@include('../components/_plus.html', {
+    "img": "./assets/images/звезда",
+    "alt": "icon",
+    "text": "Каждая модель сочетает в себе эстетику, эргономику и удобство для животного."
+})
+</div>
+
+<div>
+@@include('../components/_plus.html', {
+    "img": "./assets/images/любовь",
+    "alt": "icon",
+    "text": "Мы сами — владельцы животных, поэтому понимаем, что важно для них и для вас."
+})
+</div>
+</div>
+
+<h>О НАС</h>
+
+<div class="otzivi">
+    <div>
+        @@include('../components/_otziv.html', {
+            "name": "Иван Викинов",
+            "text": "Отличный магазин, широкий выбор, доступные цены"
+        })
+    </div>
+        <div>
+        @@include('../components/_otziv.html', {
+            "name": "Мария Иванова",
+            "text": "Прекрасный магазин, рекомендаю всем, кто хочет порадовать своих пушистых друзей!"
+        })
+    </div>
+</div>
+
+<h>КАТЕГОРИИ</h>
+
+<div class="kategorii">
+    <div>
+        @@include('../components/_kategoria.html', {
+            "name": "кошек",
+            "kat1": "Домики",
+            "kat2": "Когтеточки",
+            "kat3": "Подставки под миски",
+            "kat4": "Лежанки",
+            "img": "./assets/images/карт1.webp"
+        })
+    </div>
+        <div>
+        @@include('../components/_kategoria.html', {
+            "name": "собак",
+            "kat1": "Домики",
+            "kat2": "Подставки под миски",
+            "kat3": "Вольеры-тумбы",
+            "kat4": "Лежанки",
+            "img": "./assets/images/карт2.webp"
+        })
+    </div>
+        <div>
+        @@include('../components/_kategoria.html', {
+            "name": "грызунов",
+            "kat1": "Домики",
+            "kat2": "Витрины-комплексы",
+            "kat3": "Аксессуары",
+            "kat4": "",
+            "img": "./assets/images/карт3.webp"
+        })
+    </div>
+        <div>
+        @@include('../components/_kategoria.html', {
+            "name": "птиц",
+            "kat1": "Домики",
+            "kat2": "Гнёзда",
+            "kat3": "Комплексы",
+            "kat4": "",
+            "img": "./assets/images/карт4.webp"
+        })
+    </div>
+</div>
+
+<h>ПОПУЛЯРНОЕ</h>
+
+<div class="popular">
+    <div>
+         @@include('../components/_product.html', {
+            "name": "Домик для кошки",
+            "price": "7 400",
+            "img": "./assets/images/продукт.webp"
+        })
+    </div>
+    <div>
+         @@include('../components/_product.html', {
+            "name": "Домик для кошки",
+            "price": "7 400",
+            "img": "./assets/images/продукт.webp"
+        })
+    </div>
+    <div>
+         @@include('../components/_product.html', {
+            "name": "Домик для кошки",
+            "price": "7 400",
+            "img": "./assets/images/продукт.webp"
+        })
+    </div>
+</div>
+
+@@include('../components/_footer.html')
+
+</body>
+</html>
