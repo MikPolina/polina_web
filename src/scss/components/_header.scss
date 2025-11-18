@@ -12,3 +12,38 @@ header{
     display: flex;
     gap: 40px;
 }
+.logo__like{
+position: relative;
+  display: inline-block;
+}
+.logo__like.logo__izbr{
+    visibility: hidden;
+    position: absolute;
+  z-index: 1;
+}
+
+@media (max-width: 1279px) and (min-width: 768px) {
+header{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 1080px;
+}
+.header__icons{
+    display: flex;
+    gap: 40px;
+}
+.logo__like{
+position: relative;
+  display: inline-block;
+}
+.logo__like.logo__izbr{
+    visibility: hidden;
+    position: absolute;
+  z-index: 1;
+}
+}
