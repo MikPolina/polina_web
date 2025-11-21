@@ -8,13 +8,18 @@
     justify-content: center;
     align-items: center;
 }
-.btnNorm:hover{
-    background-color: #FFF4EA;
-}
-
 p{
     color: #858585 !important;
 }
+.btnNorm:hover{
+    background-color: #FFF4EA;
+    
+    font-weight: bolder;
+    p{
+        color: #ffffff !important;
+    }
+}
+
 
 @media  (max-width: 1279px) and (min-width: 768px) {
     .btnNorm{
@@ -32,6 +37,11 @@ p{
 }
 .btnNorm:hover{
     background-color: #FFF4EA;
+    
+    font-weight: bolder;
+    p{
+        color: #ffffff !important;
+    }
 }
 }
 
@@ -61,9 +71,10 @@ body.dark-theme {
     }
 .btnNorm:hover{
     background-color: #FFF4EA;
+    
+    font-weight: bolder;
     p{
-        font-weight: bolder;
-        color: #FFFF !important;
+        color: #ffffff !important;
     }
 }
 }

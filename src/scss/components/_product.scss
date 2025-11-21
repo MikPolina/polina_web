@@ -7,6 +7,8 @@
 
     &__image{
     border-radius: 10px 10px 0px 0px;
+        width: 336px;
+        height: 219px;
     }
 
         &__scroll{
@@ -121,6 +123,13 @@
     width: 35px;
     height: 35px;
 }
+.product__scroll div {
+    flex: 0 0 auto;
+    margin-right: 7px;
+}
+.product__scroll:active {
+    cursor: grabbing;
+}
 }
 
 @media (max-width: 767px) {
@@ -183,6 +192,13 @@
     background-image: url('../images/сердцеБ.webp');
     width: 25px;
     height: 25px;
+}
+.product__scroll div {
+    flex: 0 0 auto;
+    margin-right: 7px;
+}
+.product__scroll:active {
+    cursor: grabbing;
 }
 }
 

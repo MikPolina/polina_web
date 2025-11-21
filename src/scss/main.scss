@@ -383,7 +383,11 @@ h1{
     font-weight: bold;
 }
 .h1__2{
-    font-size: 20px;
+    font-size: 17px;
+    color: #ffffff;
+}
+.h1__1{
+    font-size: 24px;
     color: #ffffff;
 }
 h2{
@@ -496,12 +500,12 @@ span{
     padding-top: 30px;
 
     &__karta{
-        width: 471px;
-        height: 304px;
+        width: 421px;
+        height: 254px;
     }
     &__logotip{
-        width: 158px;
-        height: 65px;
+        width: 138px;
+        height: 60px;
     }
 
     &__img{
@@ -533,7 +537,7 @@ span{
         justify-content: center;
         flex-wrap: wrap;
         row-gap: 30px;
-        gap: 150px;
+        gap: 30px;
         padding-bottom: 30px;
     }
 }

@@ -70,6 +70,7 @@ margin-left: 100px;
 
     &__button {
     width: 40px;
+    height: 25px;
     margin-right: 20px;
     background-color: #ffffff;
     border-radius: 0px 20px 20px 0px;
@@ -103,7 +104,7 @@ margin-left: 50px;
     &__input {
     width: 590px;
     padding: 10px;
-    border-radius: 20px 0px 0px 20px;
+    border-radius: 10px 0px 0px 10px;
     border: none;
     font-size: 32px;
     color: #858585;
@@ -117,6 +118,7 @@ margin-left: 50px;
 
     &__button {
     width: 30px;
+    height: 25px;
     margin-right: 20px;
     background-color: #ffffff;
     border-radius: 0px 20px 20px 0px;
@@ -147,7 +149,7 @@ body.dark-theme {
 
         .search__input{
         background-color: #858585;
-        height: 40px;
+        height: 20px;
 
     }
 }
