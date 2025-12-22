@@ -8,137 +8,193 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <title>Document</title>
 </head>
-<script src="./assets/js/like.js"></script>
-<script src="./assets/js/menu.js"></script>
 
 <body>
 
 @@include('../components/_header.html')
 
-@@include('../components/_helo.html')
+<section class="slider">
+  <div class="slider__container">
+    @@include('../components/_slide.html', {
+  "text": "СОЗДАВАЙ БУДУЩЕЕ С НАМИ",
+  "img": "./assets/images/slider1.webp"
+})
 
+@@include('../components/_slide.html', {
+  "text": "РЕШАЙ ЗАДАЧИ, КОТОРЫЕ МЕНЯЮТ МИР",
+  "img": "./assets/images/slider2.webp"
+})
 
-<h>О НАС</h>
-<p class="onas__text">Лапкин — создаем эргономичную мебель для домашних питомцев, 
-    которая сочетает современный дизайн, качественные материалы и продуманный комфорт.</p>
+@@include('../components/_slide.html', {
+  "text": "ЗДЕСЬ РАСТУТ ЛУЧШИЕ IT-УМЫ",
+  "img": "./assets/images/slider3.webp"
+})
+  </div>
+</section>
 
-<div class="plusi">
-<div>
+<section class="about">
+  <div class="about__container">
+    <div class="about__decoration">
+     <img src="./assets/images/about.webp" alt="QSCAPE" class="about__image">
+    </div>
+
+    <div class="about__content">
+      <p class="about__text">
+        QScape — это команда профессионалов, которые ценят хорошие
+        отношения внутри коллектива и помогают друг другу; работают, как
+        отлаженный механизм, приходят на помощь своим коллегам и задают
+        тон правильной работе команды.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="features">
+  <div class="features__container">
+
+    <div class="features__text">
+      <h2 class="features__title">ПОЧЕМУ QSCAPE?</h2>
+    </div>
+
+    <!-- Сетка карточек (компоненты) -->
+    <div class="features__grid">
+
+@@include('../components/_reason.html', {
+    "title": "Команда, которая вдохновляет",
+    "text": "У нас царит атмосфера драйва и поддержки. Руководители — это наставники, которые всегда помогут советом и направят",
+    "img": "./assets/images/reason1.webp"
+})
+
+@@include('../components/_reason.html', {
+    "title": "Стань гуру интернет-маркетинга",
+    "text": "Погрузись в мир создания и продвижения сайтов. Здесь ты получишь реальные навыки и увидишь магию digital-сферы изнутри",
+    "img": "./assets/images/reason2.webp"
+})
+
+@@include('../components/_reason.html', {
+    "title": "Работа с крутыми проектами",
+    "text": "Мы сотрудничаем с разными нишами и брендами. Каждый проект это новый вызов и возможность прокачать скиллы.",
+    "img": "./assets/images/reason3.webp"
+})
+
+@@include('../components/_reason.html', {
+    "title": "Работай откуда угодно",
+    "text": "Мы digital-компания, а это значит — ловить солнце на Бали или пить кофе в центре города? Работай из любой точки мира.",
+    "img": "./assets/images/reason4.webp"
+})
+
+@@include('../components/_reason.html', {
+    "title": "Профессиональный рост",
+    "text": "Мы инвестируем в твое развитие: обучаем, делимся экспертизой, помогаем освоить новые инструменты. Твой рост — наш приоритет.",
+    "img": "./assets/images/reason5.webp"
+})
+
+@@include('../components/_reason.html', {
+    "title": "Стабильный график",
+    "text": "Работай с понедельника по пятницу с 9:00 до 18:00 и планируй свою жизнь без неожиданных переработок.",
+    "img": "./assets/images/reason6.webp"
+})
+
+@@include('../components/_reason.html', {
+    "title": "Команда = семья",
+    "text": "Мы друзья. За счёт компании организуем тимбилдинги и ивенты, где можно оторваться по-настоящему.",
+    "img": "./assets/images/reason7.webp"
+})
+</div>
+</div>
+</section>
+
+<h1 class="title_main">ОСОБЕННОСТИ НАШЕЙ РАБОТЫ</h1>
+
+<div class="pluses">
+    @@include('../components/_plus.html', {
+    "title": "Растим таланты",
+    "text": "Мы подготовили интенсивный курс для новичков — твой быстрый старт в профессии. Осваивай ключевые навыки и сразу включайся в реальные проекты!",
+    "number": "01"
+})
+
 @@include('../components/_plus.html', {
-    "img": "./assets/images/качество",
-    "alt": "icon",
-    "text": "Используем только безопасные, прочные материалы, чтобы мебель выдерживала активные игры и радовала вас долгие годы."
+    "title": "Всегда поможем",
+    "text": "Персональный наставник проведет тебя через все задачи. Ошибайся, учись и достигай большего — мы рядом на каждом этапе!",
+    "number": "02"
+})
+
+@@include('../components/_plus.html', {
+    "title": "Развивайся с нами",
+    "text": "Корпоративные тренинги, полезная литература и свобода для творчества. Покажи, на что способен — мы поддержем любые начинания.",
+    "number": "03"
+})
+
+@@include('../components/_plus.html', {
+    "title": "Мы любим своих клиентов",
+    "text": "Мы вкладываем душу в каждый проект, потому что видим, как меняется бизнес наших партнеров. Их успех — наша лучшая награда.",
+    "number": "04"
+})
+
+@@include('../components/_plus.html', {
+    "title": "Ценим дело, а не слова",
+    "text": "Минимум бюрократии — максимум действий. Мы доверяем команде и верим в потенциал нашей команды.",
+    "number": "05"
+})
+
+@@include('../components/_plus.html', {
+    "title": "Идеи меняют мир",
+    "text": "Предложи улучшение — и мы внедрим его вместе. Каждая инициатива ценна для нас.",
+    "number": "06"
+})
+
+@@include('../components/_plus.html', {
+    "title": "Не стоим на месте",
+    "text": "Постоянно учимся новому: осваиваем инструменты, экспериментируем, растем. Сегодня мы лучше, чем вчера.",
+    "number": "07"
+})
+
+@@include('../components/_plus.html', {
+    "title": "Работаем с любовью",
+    "text": "Обожаем то, что делаем! Видеть реальную пользу своего труда — вот что заряжает нас на новые свершения.",
+    "number": "08"
 })
 </div>
 
-<div>
-@@include('../components/_plus.html', {
-    "img": "./assets/images/звезда",
-    "alt": "icon",
-    "text": "Каждая модель сочетает в себе эстетику, эргономику и удобство для животного."
+<section class="about">
+  <div class="about__container">
+    <div class="about__content">
+        <h2 class="about__content__title">У нас работа в радость</h2>
+      <p class="about__text">
+        Мы создаем атмосферу личного комфорта и профессионального интереса для каждого в команде
+      </p>
+    </div>
+
+    <div class="about__decoration">
+     <img src="./assets/images/about2.webp" alt="QSCAPE" class="about__image">
+    </div>
+  </div>
+</section>
+
+<section class="buttons">
+  <div class="buttons__contanier">
+    <div class="buttons__first">
+      @@include('../components/_button.html', {
+  "text": "Посмотреть вакансии"
 })
-</div>
+    </div>
 
-<div>
-@@include('../components/_plus.html', {
-    "img": "./assets/images/любовь",
-    "alt": "icon",
-    "text": "Мы сами — владельцы животных, поэтому понимаем, что важно для них и для вас."
+    <div class="buttons__block">
+      @@include('../components/_button-link.html', {
+  "text": "Отправить резюме"
 })
-</div>
-</div>
 
-<h>ОТЗЫВЫ</h>
+@@include('../components/_form.html')
 
-<div class="otzivi">
-    <div>
-        @@include('../components/_otziv.html', {
-            "name": "Иван Викинов",
-            "text": "Отличный магазин, широкий выбор, доступные цены"
-        })
+@@include('../components/_button-link.html', {
+  "text": "Позвонить"
+})
     </div>
-        <div>
-        @@include('../components/_otziv.html', {
-            "name": "Мария Иванова",
-            "text": "Прекрасный магазин, рекомендаю всем, кто хочет порадовать своих пушистых друзей!"
-        })
-    </div>
-</div>
-
-<h>КАТЕГОРИИ</h>
-
-<div class="kategorii">
-    <div>
-        @@include('../components/_kategoria.html', {
-            "name": "кошек",
-            "kat1": "Домики",
-            "kat2": "Когтеточки",
-            "kat3": "Подставки под миски",
-            "kat4": "Лежанки",
-            "img": "./assets/images/карт1.webp"
-        })
-    </div>
-        <div>
-        @@include('../components/_kategoria.html', {
-            "name": "собак",
-            "kat1": "Домики",
-            "kat2": "Подставки под миски",
-            "kat3": "Вольеры-тумбы",
-            "kat4": "Лежанки",
-            "img": "./assets/images/карт2.webp"
-        })
-    </div>
-        <div>
-        @@include('../components/_kategoria.html', {
-            "name": "грызунов",
-            "kat1": "Домики",
-            "kat2": "Витрины-комплексы",
-            "kat3": "Аксессуары",
-            "kat4": "",
-            "img": "./assets/images/карт3.webp"
-        })
-    </div>
-        <div>
-        @@include('../components/_kategoria.html', {
-            "name": "птиц",
-            "kat1": "Домики",
-            "kat2": "Гнёзда",
-            "kat3": "Комплексы",
-            "kat4": "",
-            "img": "./assets/images/карт4.webp"
-        })
-    </div>
-</div>
-
-<h>ПОПУЛЯРНОЕ</h>
-
-<div class="popular">
-    <div>
-         @@include('../components/_product.html', {
-            "name": "Домик для кошки",
-            "price": "7 400",
-            "img": "./assets/images/продукт.webp"
-        })
-    </div>
-    <div>
-         @@include('../components/_product.html', {
-            "name": "Лежанка для собаки",
-            "price": "3 200",
-            "img": "./assets/images/прод1.webp"
-        })
-    </div>
-    <div>
-         @@include('../components/_product.html', {
-            "name": "Лукошко для кошки мягкое",
-            "price": "5 200",
-            "img": "./assets/images/прод2.webp"
-        })
-    </div>
-</div>
+  </div>
+</section>
 
 @@include('../components/_footer.html')
 
-<script src="./assets/js/scroll.js"></script>
-<script src="./assets/js/theme.js"></script>
+<script src="./assets/js/menu.js"></script>
 </body>
 </html>

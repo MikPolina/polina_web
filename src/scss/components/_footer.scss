@@ -1,110 +1,149 @@
-footer{
-    padding-left: 50px;
-    padding-right: 50px;
-    width: 1180px;
-    height: 350px;
-    background-color: #858585;
-    margin: 0 auto;
+.footer {
+    padding: 30px 200px 30px 200px;
+    background-color: #3D3D3D;
+  
+  .container {
+    max-width: 1280px;
     display: flex;
-    justify-content: center;
-    justify-content: space-between;
     align-items: center;
-}
-.footer__logo__icons{
-    display: flex;
-    gap: 20px;
-}
-.footer__menu__a{
+    justify-content: space-between;
+  }
+
+  &__nav {
+  &__list {
+    display: grid;
+    grid-auto-flow: row;
+    list-style: none;
+    padding: 0;
+  }
+
+  &__item{
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  &__link {
+    text-decoration: none;
     color: #ffffff;
-}
-
-@media (max-width: 1279px) and (min-width: 768px) {
-    footer{
-    padding-left: 50px;
-    padding-right: 50px;
-    width: 100%;
-    box-sizing: border-box;
-    height: 250px;
-    background-color: #858585;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
-    justify-content: center;
-    justify-content: space-between;
-    align-items: center;
-}
-
-    .footer__logo{
-    &__icons{
-    display: flex;
-    gap: 10px;
-    &__in{
-        width: 32px;
-        height: 32px;
+    font-size: 16px;
+    transition: color 0.3s;
+    
+    &:hover {
+      color: #7E4CC3;
     }
-}
-.footer__menu__a{
-    color: #ffffff;
-}
-.logotip{
-    width: 88px;
-    height: 89px;
-}
-}
-.logo{
-    display: flex;
-    justify-content: center;
-}
-}
-
-
-@media (max-width: 767px) {
-    footer{
-    padding-left: 50px;
-    padding-right: 50px;
-    width: 100%;
-    box-sizing: border-box;
-    height: 100%;
-    background-color: #858585;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
-    justify-content: center;
-    justify-content: space-between;
-    align-items: center;
-}
-
-    .footer__logo{
-    &__icons{
-    display: flex;
-    gap: 5px;
-    &__in{
-        width: 20px;
-        height: 20px;
-    }
-}
-.footer__menu__a{
-    color: #ffffff;
-}
-.logotip{
-    width: 44px;
-    height: 45px;
-}
-}
-.logo{
-    display: flex;
-    justify-content: center;
-}
-}
-
-body.dark-theme {
-  footer{
-    border-top: 1px solid #ffffff;
   }
 }
+
+&__right{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    &__number{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 10px;
+    }
+}
+
+&__contacts{
+    text-align: center;
+}
+
+&__info{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-top: -32px;
+}
+
+&__adress{
+    width: 202px;
+    &__text{
+        color: #ffffff;
+        font-size: 16px;
+    }
+}
+}
+
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 10px 20px 10px 20px;
+    background-color: #3D3D3D;
+
+    &__logo svg{
+      display: flex;
+      width: 52px;
+      height: 14px;
+    }
+  
+  .container {
+    width: 100%;
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+  }
+
+  &__nav {
+  &__list {
+    display: grid;
+    grid-auto-flow: row;
+    list-style: none;
+    padding: 0;
+  }
+
+  &__item{
+    margin-bottom: 0px;
+    text-align: center;
+  }
+  
+  &__link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 10px;
+    transition: color 0.3s;
+    
+    &:hover {
+      color: #7E4CC3;
+    }
+  }
+}
+
+&__right{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    &__number{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+&__contacts{
+    text-align: center;
+}
+
+&__info{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-top: 0px;
+}
+
+&__adress{
+    width: 200px;
+    &__text{
+        color: #ffffff;
+        font-size: 10px;
+    }
+}
+}
+}
+

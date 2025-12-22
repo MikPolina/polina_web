@@ -1,47 +1,112 @@
- <header>
-    <div class="header">
-        <a href="index.html"><div class="logo"><img src="./assets/images/лого.webp" class="logo__logotip" ></div></a>
-        <nav class="nav">
-        <a href="index.html">ГЛАВНАЯ</a>
-        <a href="index2.html">КАТАЛОГ</a>
-        <a href="index3.html">О НАС</a>
-        <a href="index4.html">КОНТАКТЫ</a>
-        <a>ДОСТАВКА</a>
-        </nav>
+<header class="header">
+  <div class="container">
 
-        <div class="header__icons">
-            <div class="logo__like"><img src="./assets/images/корзина.webp" class="logo__izbr"></div>
-            <div class="logo__like"><img src="./assets/images/избр.webp" class="logo__izbr"></div>
-        </div>
-        <div class="logo__like"><img src="./assets/images/профиль.webp" class="logo__izbr"></div>
-        <div class="logo__like"><img src="./assets/images/луна.webp" class="logo__izbr"></div>
-</div>
+    <a href="index.html" class="logo">
+<svg width="106" height="30" viewBox="0 0 106 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_32_156)">
+<path d="M23.5244 25.9989L19.0417 18.1241C20.781 16.2016 21.8443 13.654 21.8443 10.8627C21.8443 4.86324 16.9545 0 10.9222 0C4.88987 0 0 4.86324 0 10.8627C0 16.8621 4.88987 21.7254 10.9222 21.7254C12.369 21.7254 13.7486 21.4423 15.0096 20.9351L19.9904 28M5.02428 10.8627C5.02428 7.62314 7.66489 4.99691 10.9222 4.99691C14.1795 4.99691 16.8201 7.62314 16.8201 10.8627C16.8201 14.1022 14.1795 16.7284 10.9222 16.7284C7.66489 16.7284 5.02428 14.1022 5.02428 10.8627Z" fill="url(#paint0_linear_32_156)"/>
+<path d="M12.1081 11.2991C11.2107 11.2991 10.4834 10.5757 10.4834 9.68324C10.4834 8.96771 10.9538 8.36619 11.606 8.15389C11.3886 8.09885 11.1594 8.0674 10.9222 8.0674C9.36864 8.0674 8.11158 9.31761 8.11158 10.8627C8.11158 12.4078 9.36864 13.658 10.9222 13.658C12.4757 13.658 13.7328 12.4078 13.7328 10.8627C13.7328 10.6268 13.7011 10.3988 13.6458 10.1825C13.4323 10.8273 12.8315 11.2991 12.1081 11.2991Z" fill="url(#paint1_linear_32_156)"/>
+<path d="M38.2889 10.8194L34.3556 12.3173C33.7943 10.5403 32.7705 9.65178 31.2802 9.65178C30.5805 9.65178 30.031 9.84836 29.6239 10.2415C29.2167 10.6347 29.0151 11.0946 29.0151 11.6215C29.0151 12.2308 29.2562 12.7183 29.7385 13.08C30.2208 13.4417 31.2248 13.9174 32.7586 14.5072C34.154 15.0222 35.253 15.5333 36.0515 16.0365C36.85 16.5397 37.4943 17.2277 37.9884 18.0966C38.4786 18.9655 38.7277 19.9719 38.7277 21.116C38.7277 23.125 38.0319 24.7723 36.6405 26.0618C35.249 27.3513 33.3871 27.9961 31.0509 27.9961C27.1295 27.9961 24.6233 26.0225 23.5323 22.0792L27.6869 20.8958C28.1929 23.0621 29.3511 24.1471 31.1616 24.1471C31.9878 24.1471 32.6558 23.9348 33.1697 23.5102C33.6836 23.0856 33.9406 22.5234 33.9406 21.8315C33.9406 21.3047 33.7587 20.8368 33.4029 20.4201C33.0432 20.0034 32.217 19.567 30.9284 19.1031C29.2681 18.5133 28.0308 17.9826 27.2165 17.5029C26.4022 17.0233 25.7302 16.3392 25.2004 15.4507C24.6707 14.5622 24.4059 13.5518 24.4059 12.4156C24.4059 10.4813 25.0305 8.89694 26.2836 7.65852C27.5367 6.42404 29.193 5.8068 31.2565 5.8068C35.0197 5.8068 37.3678 7.47767 38.2968 10.8234L38.2889 10.8194Z" fill="url(#paint2_linear_32_156)"/>
+<path d="M52.1837 19.8265L56.5755 20.0938C56.4174 22.4291 55.6703 24.328 54.3381 25.7944C53.0059 27.2609 51.2468 27.9961 49.0569 27.9961C46.3925 27.9961 44.3607 27.0132 42.9653 25.0475C41.5699 23.0817 40.8702 20.3729 40.8702 16.925C40.8702 13.4771 41.562 10.7211 42.9495 8.7554C44.333 6.78967 46.3925 5.8068 49.1201 5.8068C53.6345 5.8068 56.0932 8.58242 56.4964 14.1376L52.1521 14.4521C52.0374 11.2558 51.0294 9.65571 49.1399 9.65571C48.1477 9.65571 47.3571 10.1707 46.7681 11.2008C46.183 12.2308 45.8866 14.228 45.8866 17.1963C45.8866 19.8461 46.1554 21.6703 46.6969 22.661C47.2345 23.6557 48.0449 24.1511 49.1241 24.1511C50.8594 24.1511 51.8793 22.7122 52.1837 19.8304V19.8265Z" fill="url(#paint3_linear_32_156)"/>
+<path d="M63.4458 6.13704H68.2369L74.4233 27.6698H69.5572L68.478 23.2233H62.3785L61.3152 27.6698H56.9431L63.4458 6.13704ZM67.5807 19.5277L65.3907 10.7054L63.2917 19.5277H67.5767H67.5807Z" fill="url(#paint4_linear_32_156)"/>
+<path d="M76.2299 6.13704H82.4638C84.3573 6.13704 85.8238 6.2943 86.8635 6.60882C87.9031 6.92334 88.7807 7.63886 89.4883 8.74754C90.1959 9.85622 90.5516 11.2322 90.5516 12.8717C90.5516 14.5111 90.267 15.7534 89.6938 16.7835C89.1206 17.8135 88.33 18.5566 87.322 19.0166C86.314 19.4726 84.7605 19.7046 82.6654 19.7046H80.9853V27.6698H76.2259V6.13704H76.2299ZM80.9893 9.62426V16.0129H82.4638C83.7643 16.0129 84.6024 15.7141 84.9779 15.1126C85.3534 14.5111 85.5392 13.7327 85.5392 12.7734C85.5392 11.9635 85.393 11.3069 85.1044 10.8037C84.8119 10.3044 84.4759 9.98203 84.0885 9.84049C83.7011 9.69896 83.1595 9.62819 82.4638 9.62819H80.9893V9.62426Z" fill="url(#paint5_linear_32_156)"/>
+<path d="M92.8365 6.13704H106V9.8287H97.5919V14.8295H104.126V18.5212H97.5919V23.8208H106V27.6698H92.8365V6.13704Z" fill="url(#paint6_linear_32_156)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_32_156" x1="11.7602" y1="0" x2="11.7602" y2="28" gradientUnits="userSpaceOnUse">
+<stop stop-color="#36A9E1"/>
+<stop offset="0.33" stop-color="#438CCA"/>
+<stop offset="1" stop-color="#624897"/>
+</linearGradient>
+<linearGradient id="paint1_linear_32_156" x1="8.11158" y1="10.8627" x2="13.7328" y2="10.8627" gradientUnits="userSpaceOnUse">
+<stop stop-color="#36A9E1"/>
+<stop offset="1" stop-color="#33A5DE"/>
+</linearGradient>
+<linearGradient id="paint2_linear_32_156" x1="31.13" y1="5.81073" x2="31.13" y2="27.9921" gradientUnits="userSpaceOnUse">
+<stop stop-color="#36A9E1"/>
+<stop offset="0.33" stop-color="#438CCA"/>
+<stop offset="1" stop-color="#624897"/>
+</linearGradient>
+<linearGradient id="paint3_linear_32_156" x1="48.7228" y1="5.8068" x2="48.7228" y2="27.9961" gradientUnits="userSpaceOnUse">
+<stop stop-color="#36A9E1"/>
+<stop offset="0.33" stop-color="#438CCA"/>
+<stop offset="1" stop-color="#624897"/>
+</linearGradient>
+<linearGradient id="paint4_linear_32_156" x1="65.6832" y1="6.13704" x2="65.6832" y2="27.6698" gradientUnits="userSpaceOnUse">
+<stop stop-color="#36A9E1"/>
+<stop offset="0.33" stop-color="#438CCA"/>
+<stop offset="1" stop-color="#624897"/>
+</linearGradient>
+<linearGradient id="paint5_linear_32_156" x1="83.3927" y1="6.13704" x2="83.3927" y2="27.6698" gradientUnits="userSpaceOnUse">
+<stop stop-color="#36A9E1"/>
+<stop offset="0.33" stop-color="#438CCA"/>
+<stop offset="1" stop-color="#624897"/>
+</linearGradient>
+<linearGradient id="paint6_linear_32_156" x1="99.4182" y1="6.13704" x2="99.4182" y2="27.6698" gradientUnits="userSpaceOnUse">
+<stop stop-color="#36A9E1"/>
+<stop offset="0.33" stop-color="#438CCA"/>
+<stop offset="1" stop-color="#624897"/>
+</linearGradient>
+<clipPath id="clip0_32_156">
+<rect width="106" height="28" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+    </a>
 
-
-        <div class="menu">
-            <a href="index.html"><div class="logo"><img src="./assets/images/лого.webp" class="logo__logotip"></div></a>
-        <div class="menu__luna">
-        <div><img src="./assets/images/меню.webp" alt="Меню" class="menu__icon"></div>
-        <div class="logo__like"><img src="./assets/images/луна.webp" class="logo__izbr"></div>
-            </div>
+    <div class="burger">
+          <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.1 7.19988H0.9C0.405 7.19988 0 6.79488 0 6.29988C0 5.80488 0.405 5.39988 0.9 5.39988H17.1C17.595 5.39988 18 5.80488 18 6.29988C18 6.79488 17.595 7.19988 17.1 7.19988Z" fill="#2AAAE1"/>
+<path d="M17.1 1.8H0.9C0.405 1.8 0 1.395 0 0.9C0 0.405 0.405 0 0.9 0H17.1C17.595 0 18 0.405 18 0.9C18 1.395 17.595 1.8 17.1 1.8Z" fill="#2AAAE1"/>
+<path d="M17.1 12.6001H0.9C0.405 12.6001 0 12.1951 0 11.7001C0 11.2051 0.405 10.8001 0.9 10.8001H17.1C17.595 10.8001 18 11.2051 18 11.7001C18 12.1951 17.595 12.6001 17.1 12.6001Z" fill="#2AAAE1"/>
+</svg>
     </div>
 
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="index.html" class="nav__link">О КОМПАНИИ</a>
+        </li>
+        <li class="nav__item">
+          <a href="index2.html" class="nav__link">ВАКАНСИИ</a>
+        </li>
+        <li class="nav__item">
+          <a href="/" class="nav__link">БЛОГ</a>
+        </li>
+        <li class="nav__item">
+          <a href="/" class="nav__link">КОНТАКТЫ</a>
+        </li>
+      </ul>
+    </nav>
 
-    <div class="overlay">
-        <div class="overlay__content">
-            <span class="overlay__close">&times;</span>
-            <nav class="overlay__nav">
-                <a href="index.html">ГЛАВНАЯ</a><br>
-                <a href="index2.html">КАТАЛОГ</a><br>
-                <a href="index3.html">О НАС</a><br>
-                <a href="index4.html">КОНТАКТЫ</a><br>
-                <a>ДОСТАВКА</a>
-            </nav>
-            <div class="header__icons">
-            <div class="logo"><img src="./assets/images/корзина.webp" class="logo__izbr"></div>
-            <div class="logo__like"><img src="./assets/images/избр.webp" class="logo__izbr"></div>
-        <div class="logo"><img src="./assets/images/профиль.webp" class="logo__izbr"></div>
-        </div>
+    <div class="contacts">
+      <a href="tel:+79200678467" class="contacts__phone">
+        <img src="./assets/images/phone_icon.webp" alt="phone" class="phone_icon">
+        +7 (920) 067-84-67
+      </a>
     </div>
+  </div>
 
-    </header>
+      <section class="menu">
+       <ul class="nav__list">
+        <li class="nav__item">
+          <a href="index.html" class="nav__link">О КОМПАНИИ</a>
+        </li>
+        <li class="nav__item">
+          <a href="index2.html" class="nav__link">ВАКАНСИИ</a>
+        </li>
+        <li class="nav__item">
+          <a href="/" class="nav__link">БЛОГ</a>
+        </li>
+        <li class="nav__item">
+          <a href="/" class="nav__link">КОНТАКТЫ</a>
+        </li>
+      </ul>
+      <div class="menu__contacts">
+      <a href="tel:+79200678467" class="menu__contacts__phone">
+        <img src="./assets/images/phone_icon.webp" alt="phone" class="phone_icon">
+        +7 (920) 067-84-67
+      </a>
+    </div>
+    </section>
+</header>

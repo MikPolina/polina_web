@@ -1,58 +1,42 @@
-.btn{
-    width: 130px;
-    height: 40px;
-    background-color: #FFF4EA;
-    border: none;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.btn:hover{
-    border: 4px solid #FFF4EA;
+.button_more{
+    &__btn{    
+    width: 1080px;
+    height: 68px;
+    background-color: #7E4CC3;
+    text-align: center;
     border-radius: 20px;
-    background-color: #ffffff;
-}
-
-@media (max-width: 1279px) and (min-width: 768px) {
-    .btn{
-    width: 100px;
-    height: 30px;
-    background-color: #FFF4EA;
     border: none;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &__p{
-        font-size: 12px;
+    
+        &:hover{
+        background-color: rgba(126, 76, 195, 0.5);
     }
 }
-.btn:hover{
-    border: 4px solid #FFF4EA;
-    border-radius: 20px;
-    background-color: #ffffff;
-}
-}
 
-
-@media (max-width: 767px) {
-    .btn{
-    width: 90px;
-    height: 25px;
-    background-color: #FFF4EA;
-    border: none;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &__p{
-        font-size: 10px;
+    &__text{
+        color: #fff;
+        font-size: 24px;
     }
 }
-.btn:hover{
-    border: 4px solid #FFF4EA;
+
+
+@media (max-width: 768px) {
+    .button_more{
+    &__btn{    
+    width: 248px;
+    height: 45px;
+    background-color: #7E4CC3;
+    text-align: center;
     border-radius: 20px;
-    background-color: #ffffff;
+    border: none;
+    
+        &:hover{
+        background-color: rgba(126, 76, 195, 0.5);
+    }
+}
+
+    &__text{
+        color: #fff;
+        font-size: 14px;
+    }
 }
 }

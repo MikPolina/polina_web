@@ -1,29 +1,46 @@
-// const burgerMenu = document.querySelector('.menu');
-// const modalOverlay = document.querySelector('.overlay');
-// const closeModal = document.querySelector('.overlay__close');
-// const mobileNavLinks = document.querySelectorAll('.overlay__nav a');
-
-// burgerMenu.addEventListener('click', function() {
-//     modalOverlay.style.display = 'block';
-//     document.body.style.overflow = 'hidden';
-// });
-
-// closeModal.addEventListener('click', function() {
-//     modalOverlay.style.display = 'none';
-//     document.body.style.overflow = 'auto';
-// });
-
+// Бургер-меню
 document.addEventListener('DOMContentLoaded', function() {
-    const menuButton = document.querySelector('.menu'); // Замените на ваш селектор кнопки меню
-    const overlay = document.querySelector('.overlay');
-    const closeButton = document.querySelector('.overlay__close'); // Замените на ваш селектор кнопки закрытия
-
-    menuButton.addEventListener('click', function() {
-        overlay.style.display = 'block'; // Показываем оверлей
+  const burger = document.querySelector('.burger');
+  const menu = document.querySelector('.menu');
+  const body = document.body;
+  
+  if (burger && menu) {
+    // Открытие/закрытие меню по клику на бургер
+    burger.addEventListener('click', function(e) {
+      e.stopPropagation();
+      menu.classList.toggle('active');
+      burger.classList.toggle('active');
+      body.classList.toggle('menu-open');
     });
-
-    closeButton.addEventListener('click', function() {
-        overlay.style.display = 'none'; // Скрываем оверлей
+    
+    // Закрытие меню при клике на ссылку в меню
+    const menuLinks = menu.querySelectorAll('.nav__link, .menu__contacts__phone');
+    menuLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        menu.classList.remove('active');
+        burger.classList.remove('active');
+        body.classList.remove('menu-open');
+      });
     });
+    
+    // Закрытие меню при клике вне меню
+    document.addEventListener('click', function(e) {
+      if (!menu.contains(e.target) && !burger.contains(e.target)) {
+        menu.classList.remove('active');
+        burger.classList.remove('active');
+        body.classList.remove('menu-open');
+      }
+    });
+    
+    // Закрытие меню при нажатии клавиши Escape
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        menu.classList.remove('active');
+        burger.classList.remove('active');
+        body.classList.remove('menu-open');
+      }
+    });
+  }
 });
+
 
